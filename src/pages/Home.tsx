@@ -12,7 +12,6 @@ function App() {
   const { wallet: activeWallet, setActiveWallet } = usePrivyWagmi();
 
   useEffect(() => {
-    console.log('blake')
     if (wallets[0] && !activeWallet) {
         setActiveWallet(wallets[0]);
     }
