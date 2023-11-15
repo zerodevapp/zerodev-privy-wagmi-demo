@@ -1,15 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
+import {goerli, polygonMumbai} from '@wagmi/chains';
+import {PrivyProvider} from '@privy-io/react-auth';
+import {ZeroDevPrivyWagmiProvider} from '@zerodev/wagmi/privy';
+import {configureChains} from 'wagmi';
+import {publicProvider} from 'wagmi/providers/public';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+import { PRIVY_APP_ID, ZERODEV_PROJECT_IDS } from './constants';
+
+const configureChainsConfig = configureChains([polygonMumbai, goerli], [publicProvider()]);
+const zeroDevOptions = {
+  projectIds: ZERODEV_PROJECT_IDS,
+  projectId: ZERODEV_PROJECT_IDS[0],
+  useSmartWalletForExternalEOA: true,
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <PrivyProvider
+      appId={PRIVY_APP_ID}
+      config={{
+        embeddedWallets: {
+          createOnLogin: 'all-users',
+          requireUserPasswordOnCreate: false
+        },
+        defaultChain: polygonMumbai,
+        supportedChains: [polygonMumbai, goerli]
+      }}
+    >
+      <ZeroDevPrivyWagmiProvider wagmiChainsConfig={configureChainsConfig} options={zeroDevOptions}>
+        <App />
+      </ZeroDevPrivyWagmiProvider>
+    </PrivyProvider>
   </React.StrictMode>
 );
 
