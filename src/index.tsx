@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 
 import {goerli, polygonMumbai} from '@wagmi/chains';
 import {PrivyProvider} from '@privy-io/react-auth';
-import {ZeroDevPrivyWagmiProvider} from '@zerodev/wagmi/privy';
+// Note: importing this from the local connector file for testing
+import {ZeroDevPrivyWagmiProvider} from './connector/ZeroDevPrivyWagmiProvider';
 import {configureChains} from 'wagmi';
 import {publicProvider} from 'wagmi/providers/public';
 
