@@ -1,6 +1,6 @@
 import { useAccount } from 'wagmi'
  
-export function UseAccount() {
+export default function UseAccount() {
   const { address, isConnecting, isDisconnected } = useAccount()
  
   if (isConnecting) return <div>Connecting…</div>

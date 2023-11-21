@@ -3,13 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { usePrivy, useWallets } from '@privy-io/react-auth';
 import { usePrivyWagmi } from '@privy-io/wagmi-connector';
 
-import { UseAccount } from '../components/UseAccount';
+import UseAccount from '../components/UseAccount';
+
+import { useWalletClient } from 'wagmi';
 
 function App() {
   const navigate = useNavigate()
   const { ready, authenticated, logout } = usePrivy();
   const { wallets } = useWallets();
   const { wallet: activeWallet, setActiveWallet } = usePrivyWagmi();
+
+  const { data: walletClient } = useWalletClient();
+  console.log('walletClient: ', walletClient);
 
   useEffect(() => {
     if (wallets[0] && !activeWallet) {

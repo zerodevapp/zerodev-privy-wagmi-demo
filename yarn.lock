@@ -2520,10 +2520,10 @@
     web3-core-helpers "^1.8.0"
     wicg-inert "^3.1.2"
 
-"@privy-io/wagmi-connector@0.1.6-beta.7":
-  version "0.1.6-beta.7"
-  resolved "https://registry.yarnpkg.com/@privy-io/wagmi-connector/-/wagmi-connector-0.1.6-beta.7.tgz#aff3036fc194d0048532fea883f5893e401a4955"
-  integrity sha512-5akLhxZUCtpgwzBrCbyl0K7ZCqwCkxqxwPpOh8OpEYO0kOzYoe7Qnz/7B3AI8kCoVwX0u8yGywwE1zlALD6NBg==
+"@privy-io/wagmi-connector@0.1.7-beta.2":
+  version "0.1.7-beta.2"
+  resolved "https://registry.yarnpkg.com/@privy-io/wagmi-connector/-/wagmi-connector-0.1.7-beta.2.tgz#b4a1195385a23c85025a411f09f69d2ba1f658a3"
+  integrity sha512-N3Siwy40gII9GnMwhJDlhpHiz/PLOlcVSqoBOhnFxm7LufxN9jQmGW9sugb/Mr9jmeV/rnNmG1TERq5T4IQbDQ==
 
 "@remix-run/router@1.11.0":
   version "1.11.0"
@@ -3728,10 +3728,10 @@
   resolved "https://registry.yarnpkg.com/@wagmi/chains/-/chains-1.8.0.tgz#70e5fd0d50c8f9b8e63585eaf8544481e71707d3"
   integrity sha512-UXo0GF0Cl0+neKC2KAmVAahv8L/5rACbFRRqkDvHMefzY6Fh7yzJd8F4GaGNNG3w4hj8eUB/E3+dEpaTYDN62w==
 
-"@wagmi/connectors@3.1.4":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@wagmi/connectors/-/connectors-3.1.4.tgz#3e7c01956bb473e553a78fb2d57893dfbd3f9eae"
-  integrity sha512-DrYPXByoP9o+xko9R6whKz1cjaJ7HZ+9P27WkW7bhYUWU/sPeDZAvWiLmPwNAhQy8U7A/teAxyUtbExaOdc8zw==
+"@wagmi/connectors@3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@wagmi/connectors/-/connectors-3.1.5.tgz#88a6beaa0339004958b02caf694305c82a6432cc"
+  integrity sha512-aE4rWZbivqWa9HqjiLDPtwROH2b1Az+lBVMeZ3o/aFxGNGNEkdrSAMOUG15/UFy3VnN6HqGOtTobOBZ10JhfNQ==
   dependencies:
     "@coinbase/wallet-sdk" "^3.6.6"
     "@ledgerhq/connect-kit-loader" "^1.1.0"
@@ -3744,12 +3744,12 @@
     abitype "0.8.7"
     eventemitter3 "^4.0.7"
 
-"@wagmi/core@1.4.6":
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/@wagmi/core/-/core-1.4.6.tgz#2f57e23aa2e52be0f492aa5628fe7d62619ad5f0"
-  integrity sha512-6SYcRZulzVNXCZ77EtJ7WfqirmMR+Svb5H/3Lqh0sDGwuW9kdH9G3hBDLf8LMJ1ImiWFsSDR5cl2qo7ZreYllA==
+"@wagmi/core@1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@wagmi/core/-/core-1.4.7.tgz#ac6b2a69929654a5e09480884c9fb6150968e866"
+  integrity sha512-PiOIGni8ArQoPmuDylHX38zMt2nPnTYRIluIqiduKyGCM61X/tf10a0rafUMOOphDPudZu1TacNDhCSeoh/LEA==
   dependencies:
-    "@wagmi/connectors" "3.1.4"
+    "@wagmi/connectors" "3.1.5"
     abitype "0.8.7"
     eventemitter3 "^4.0.7"
     zustand "^4.3.1"
@@ -4648,10 +4648,10 @@
     merkletreejs "^0.3.10"
     viem "^1.5.3"
 
-"@zerodev/wagmi@^4.2.8":
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/@zerodev/wagmi/-/wagmi-4.2.8.tgz#62053fc9c2bd3ec9e4031b84a4582b8ced8d884d"
-  integrity sha512-Q9nuO6Fqn4hSF/4oldzGPufhiUUt+X+LGOL9Yl6p9KwdL+K9+yV1Y45yVC/2nYoSJbJvL3lRR8Kdc2HeyXXusw==
+"@zerodev/wagmi@^4.2.9":
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/@zerodev/wagmi/-/wagmi-4.2.9.tgz#aa0edca83fada53685eb9e0cb1d2bf7fda024132"
+  integrity sha512-eUNu01LYtaHkI7vrXXo5Lc1sMnVN3q5MRoMxzrESdAJeDhcWAI77R/g7XzqpaNINZsK779908OeNN8dSnEBNvQ==
   dependencies:
     "@zerodev/sdk" "4.2.2"
     "@zerodev/web3auth" "4.2.8"
@@ -13277,15 +13277,15 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
-wagmi@^1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/wagmi/-/wagmi-1.4.6.tgz#5a3bee0b1a0862d339ba76f1c00ec4024d04b28b"
-  integrity sha512-A5Kryru0QT8E+dpkw83uDbfuGgyR1GdGzay2TALI7sf2kqVair8N0DuCj7ohrCStLRY1oAibXWGolRrmce4psg==
+wagmi@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/wagmi/-/wagmi-1.4.7.tgz#4236007e3d01359c4281cce34b7884ddcae3fa02"
+  integrity sha512-/k8gA9S6RnwU6Qroxs630jAFvRIx+DSKpCP1owgAEGWc7D2bAJHljwRSCRTGENz48HyJ4V3R7KYV1yImxPvM3A==
   dependencies:
     "@tanstack/query-sync-storage-persister" "^4.27.1"
     "@tanstack/react-query" "^4.28.0"
     "@tanstack/react-query-persist-client" "^4.28.0"
-    "@wagmi/core" "1.4.6"
+    "@wagmi/core" "1.4.7"
     abitype "0.8.7"
     use-sync-external-store "^1.2.0"
 
