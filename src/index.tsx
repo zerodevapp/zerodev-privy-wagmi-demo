@@ -17,7 +17,7 @@ const configureChainsConfig = configureChains([polygonMumbai, goerli], [publicPr
 const zeroDevOptions = {
   projectIds: ZERODEV_PROJECT_IDS,
   projectId: ZERODEV_PROJECT_IDS[0],
-  useSmartWalletForExternalEOA: true,
+  useSmartWalletForExternalEOA: false,
 }
 
 const root = ReactDOM.createRoot(
@@ -29,7 +29,7 @@ root.render(
       appId={PRIVY_APP_ID}
       config={{
         embeddedWallets: {
-          createOnLogin: 'all-users',
+          createOnLogin: 'users-without-wallets',
           requireUserPasswordOnCreate: false
         },
         defaultChain: polygonMumbai,
